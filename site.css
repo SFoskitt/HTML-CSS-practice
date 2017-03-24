@@ -1,0 +1,44 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+
+#page-container {
+  width: 760px;
+  margin: auto;
+}
+
+#header {
+	height: 150px;
+	background: blue;
+}
+
+#menu {
+	background: #eacaf9;
+	height: 50px;
+}
+
+#content {
+	background: green;
+	margin-right: 280px;
+}
+
+#sidebar {
+	background: darkgreen;
+	float: right;
+	width: 280px;
+}
+
+#footer {
+	height: 66px;
+	background: #adeaba;
+	clear: both;
+}
+
+
+/*
+I WANT TO DO
+disappearing header
+input field with shrinking text clue
+*/
