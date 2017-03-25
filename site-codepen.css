@@ -1,0 +1,161 @@
+/* Global resets */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    box-sizing: border-box;    
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------*/
+/*---------*/
+
+body {
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  color: #424242;
+  line-height: 1.4;
+  margin: 2em auto;
+  max-width: 630px;
+  text-align: center;
+}
+
+button {
+    width: 40%;
+    height: 30px;
+    margin: 5px;
+    border-radius: 3px;
+
+    /* maybe remove shadow */
+    text-shadow:none !important;
+    border:none !important;
+    box-shadow:none !important;
+}
+
+input {
+    width: 40%;
+    height: 25px;
+    margin: 5px;
+}
+
+label {
+    color: #20A1D4;
+    font-size: 8px;
+    font-style: italic;
+}
+
+#pointer {
+    background-color: #777;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+}
+
+#pointer:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 75%;
+    margin-left: -6px;
+    width: 0;
+    height: 0;
+    border-top: solid 6px #777;
+    border-left: solid 6px transparent;
+    border-right: solid 6px transparent;
+}
+
+#progress {
+    background-color: #EF5F3C;
+    height: 15px;
+    width: 66%;
+}
+
+#progress-bar {
+    border-bottom: none;
+    height: 15px;
+}
+
+#give {
+    background-color: lightgreen;
+    color: white;
+    float: right;
+}
+
+#info {
+    padding: 2em;
+    text-align: left;
+    font-size: 0.75em;
+}
+
+.container {
+    margin: auto;
+    width: 40%;
+}
+
+.my-border {
+    border-style: solid;
+    border-color: #eaeaea;
+    border-width: 2px;
+}
+
+.emphasis {
+    color: #EF5F3C;
+    font-weight: bold;
+}
+
+
+
+/* COLORS: 
+  blue: #20A1D4;
+  green: #1CBC2C;
+  orange: #EF5F3C;
+  black: #424242;
+  grey: #777;
+  light grey: #eaeaea;
+*/
+
+
+/* Your CSS goes here */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">@import "./site.css"</style>
+</head>
+<body>
+    <div class="container">
+        <div id="pointer">$167 still needed for this project</div>
+        <div class="my-border" id="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <div class="my-border" id="info">
+            <p><span class="emphasis">Only 3 days left</span> to fund this project.</p><br />
+            <p>Join the 42 others donors who have already supported this project.  Every dollar helps.</p><br /><br />
+            <input type="text" id="amount" />
+            <button id="give">Give Now</button>
+        </div>
+        <div id="buttons">
+            <button>Save for Later</button>
+            <button>Tell your friends</button>
+        </div>
+    </div>
+    <script>
+        (function(){
+            var pTag = Array.prototype.slice.call(document.getElementsByTagName('p'));
+            var infoStr = pTag[1].innerText;
+            var hash = {};
+
+            for (var i = 0; i < infoStr.length; i++){
+                var tmp = infoStr[i].toLowerCase();
+                if(tmp.search(/[^a-z]/) === -1){ 
+                    if(hash.hasOwnProperty(tmp)){
+                        hash[tmp]++;
+                    } else {
+                        hash[tmp] = 1;
+                    }
+                }
+            }
+            return hash;
+        })();
+    </script>
+</body>
+</html>
