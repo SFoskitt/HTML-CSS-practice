@@ -1,0 +1,53 @@
+<DOCTYPE! html>
+<html>
+<head>
+    <style>@import "./site4.css"</style>
+    <title>SITE 4</title>
+</head>
+<body>
+  <h1>Convert the string</h1>
+  <div id="instruction">
+  Convert the input string as follows:
+    <ul>
+      <li>Reduce upper case letters to lowercase</li>
+      <li>Rotate letter to the previous letter</li>
+      <li>Then replace each vowel with uppercase vowel</li>
+    </ul>
+    Example:  "Great To Meet You!" converts to "fqdzs sn ldds xnt!"
+  </div>
+  <div>
+    <p><input type="text" id="user_input" /></p>
+    <p><span id='display'></span></p>
+    <p><button onClick="convertString()">Submit</button></p>
+  </div>
+</body>
+  <script>
+    console.log('hey');
+    function convertString (){
+      var arr =  Array.prototype.slice.call(document.getElementById("user_input").value);
+      var ans = '';
+      var vowels = {'a': 'A', 'e': 'E', 'i': 'I', 'o': 'O', 'u': 'U'};
+      var dict = 'abcdefghijklmnopqrstuvwxyz';
+      arr.forEach(function(elem){
+        var tmp = elem.toLowerCase();
+        var idx = dict.indexOf(tmp);
+        var ltr;
+        if(idx !== -1){
+          if(idx === 0){
+            ltr = dict[25];
+          } else {
+            ltr = dict[idx - 1];
+          }
+          if(vowels.hasOwnProperty(ltr)){
+            ltr = vowels[ltr];
+          }
+        } else {
+          ltr = elem;
+        }
+        ans += ltr;
+      });
+      document.getElementById('display').innerHTML = ans;
+    }
+  </script>
+</html>
+</DOCTYPE!>
